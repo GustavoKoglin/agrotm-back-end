@@ -9,7 +9,7 @@ import { Driver, DriverDocument } from "./entities/driver.entity";
 export class DriversService {
   constructor(
     @InjectModel(Driver.name) private driverModel: Model<DriverDocument>
-  ) { }
+  ) {}
 
   create(createDriverDto: CreateDriverDto) {
     const driver = new this.driverModel(createDriverDto);

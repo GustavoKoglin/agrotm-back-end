@@ -13,7 +13,7 @@ import { UpdateDriverDto } from "./dto/update-driver.dto";
 
 @Controller("drivers")
 export class DriversController {
-  constructor(private readonly driversService: DriversService) { }
+  constructor(private readonly driversService: DriversService) {}
 
   @Post()
   create(@Body() createDriverDto: CreateDriverDto) {

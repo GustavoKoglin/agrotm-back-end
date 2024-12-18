@@ -11,4 +11,4 @@ import { Driver, DriverSchema } from "./entities/driver.entity";
   controllers: [DriversController],
   providers: [DriversService],
 })
-export class DriversModule { }
+export class DriversModule {}
