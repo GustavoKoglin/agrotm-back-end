@@ -1,5 +1,10 @@
 {
   "version": 2,
+  "env": {
+    "URL_CONNECTION": "mongodb+srv://atendimento:99zgcD2azicHgb0n@cluster0.kinp1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "JWT_SECRET": "codingwithabbas",
+    "JWT_EXPIRES": "3d"
+  },
   "builds": [
     {
       "src": "src/main.ts",
