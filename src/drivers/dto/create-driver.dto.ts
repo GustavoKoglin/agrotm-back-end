@@ -10,7 +10,7 @@ export class CreateDriverDto {
   anttValidity: string;
   vehicleType: string;
   vehicleBrand: string;
-  vehicleYear: number;
+  vehicleYear: string;
   vehiclePlate: string;
   experience: number | null;
   workingAreas: string;
