@@ -17,9 +17,9 @@ import { APP_GUARD } from "@nestjs/core";
       inject: [ConfigService],
       useFactory: (config: ConfigService) => {
         return {
-          secret: config.get<string>("JWT_SECRET"),
+          secret: config.get<string>("3d"),
           signOptions: {
-            expiresIn: config.get<string | number>("JWT_EXPIRES"),
+            expiresIn: config.get<string | number>("3d"),
           },
         };
       },
@@ -37,4 +37,4 @@ import { APP_GUARD } from "@nestjs/core";
   ],
   exports: [JwtStrategy, PassportModule],
 })
-export class AuthModule {}
+export class AuthModule { }
