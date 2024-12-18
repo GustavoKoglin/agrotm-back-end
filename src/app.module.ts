@@ -12,9 +12,7 @@ import { AuthModule } from "./auth/auth.module";
       envFilePath: ".env",
       isGlobal: true,
     }),
-    MongooseModule.forRoot(
-      "mongodb+srv://atendimento:99zgcD2azicHgb0n@cluster0.kinp1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-    ),
+    MongooseModule.forRoot(process.env.URL_CONNECTION),
     AuthModule,
     DriversModule,
   ],
