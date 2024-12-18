@@ -10,11 +10,13 @@ import {
 import { DriversService } from "./drivers.service";
 import { CreateDriverDto } from "./dto/create-driver.dto";
 import { UpdateDriverDto } from "./dto/update-driver.dto";
+import { Public } from "src/auth/metadataKeys";
 
 @Controller("drivers")
 export class DriversController {
-  constructor(private readonly driversService: DriversService) {}
+  constructor(private readonly driversService: DriversService) { }
 
+  @Public()
   @Post()
   create(@Body() createDriverDto: CreateDriverDto) {
     return this.driversService.create(createDriverDto);

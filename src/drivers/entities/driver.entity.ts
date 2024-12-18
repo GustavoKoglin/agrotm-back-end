@@ -45,7 +45,7 @@ export class Driver {
   vehiclePlate: string;
 
   @Prop()
-  experience: string;
+  experience: string | null;
 
   @Prop()
   workingAreas: string;

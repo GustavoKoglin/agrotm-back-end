@@ -12,7 +12,7 @@ export class CreateDriverDto {
   vehicleBrand: string;
   vehicleYear: number;
   vehiclePlate: string;
-  experience: number;
+  experience: number | null;
   workingAreas: string;
   availability: string;
   notes: string;
